@@ -18,4 +18,11 @@ export async function signInUser(email, password) {
     return response.user;
 }
 
+export function checkAuth() {
+    const user = getUser();
+    if (!user) {
+        location.replace('/login-page');
+    }
+}
+
 // export async function checkAuth() {}
