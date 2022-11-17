@@ -1,6 +1,6 @@
 /* Imports */
 
-import { signUpUser } from './fetch-utils.js';
+import { signUpUser, signInUser } from './fetch-utils.js';
 
 /* Get DOM Elements */
 const signInForm = document.getElementById('sign-in');
@@ -21,7 +21,7 @@ signUpForm.addEventListener('submit', async (e) => {
 signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(signInForm);
-    const user = await signUpUser(data.get('email'), data.get('password'));
+    const user = await signInUser(data.get('email'), data.get('password'));
     if (user) {
         location.replace('/other-page');
     }
