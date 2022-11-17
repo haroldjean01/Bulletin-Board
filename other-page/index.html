@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+        <!-- js -->
+        <script type="module" src="app.js"></script>
+
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+
+        <!-- css -->
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Web App</h1>
+        </header>
+        <button id="logout">Logout</button>
+        <form action="" id="create-post">
+            Form
+            <label>
+                Title
+                <input type="text" id="title" />
+            </label>
+            <label>
+                Message
+                <input type="text" id="message" />
+            </label>
+            <label>
+                Author
+                <input type="text" id="author" />
+            </label>
+            <button type="submit" id="post-button">Submit</button>
+        </form>
+    </body>
+</html>
