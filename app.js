@@ -14,6 +14,10 @@ const createButton = document.getElementById('create-button');
 loginButton.addEventListener('click', () => {
     location.replace('/login-page');
 });
+
+createButton.addEventListener('click', () => {
+    location.replace('/create-page');
+});
 // signUpForm.addEventListener('submit', async (e) => {
 //     e.preventDefault();
 //     const data = new FormData(signUpForm);
