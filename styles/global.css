@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: var(--primary-font);
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
@@ -32,4 +31,7 @@ header .logo {
 
 main {
     padding: 20px;
+    font-family: 'Noto Sans Mono', monospace;
+    color: white;
+    background-color: black;
 }
