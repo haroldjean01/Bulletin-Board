@@ -25,4 +25,8 @@ export function checkAuth() {
     }
 }
 
+export async function createPost(postData) {
+    const post = await client.from('posts').insert(postData);
+}
+
 // export async function checkAuth() {}
