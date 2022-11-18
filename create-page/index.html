@@ -16,7 +16,7 @@
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="other-page.js"></script>
+        <script type="module" src="create-page.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
@@ -29,26 +29,26 @@
 
     <body>
         <header>
-            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <img class="logo" src="../assets/html_css_js.png" alt="logo" />
             <h1>Web App</h1>
             <button id="home-page">Home</button>
         </header>
-        <button id="logout">Logout</button>
-        <form action="" id="create-post">
-            Form
-            <label>
-                Title
-                <input name="title" type="text" id="title" />
-            </label>
-            <label>
-                Message
-                <input name="message" type="text" id="message" />
-            </label>
-            <label>
-                Author
-                <input name="author" type="text" id="author" />
-            </label>
-            <button type="submit" id="post-button">Submit</button>
-        </form>
+        <main>
+            <form id="create-post">
+                <label>
+                    Title
+                    <input name="title" type="text" id="title" />
+                </label>
+                <label>
+                    Message
+                    <input name="message" type="text" id="message" />
+                </label>
+                <label>
+                    Author
+                    <input name="author" type="text" id="author" />
+                </label>
+                <button type="submit" id="post-button">Submit</button>
+            </form>
+        </main>
     </body>
 </html>

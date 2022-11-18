@@ -25,8 +25,13 @@ export function checkAuth() {
     }
 }
 
+export async function getPosts() {
+    const response = await client.from('posts').select('*');
+    return response.data;
+}
+
 export async function createPost(postData) {
-    const post = await client.from('posts').insert(postData);
+    await client.from('posts').insert(postData);
 }
 
 // export async function checkAuth() {}
