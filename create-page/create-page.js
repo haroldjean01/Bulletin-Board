@@ -1,7 +1,7 @@
 import { checkAuth, createPost } from '../fetch-utils.js';
 
 window.addEventListener('load', async () => {
-    checkAuth();
+    await checkAuth();
 });
 
 const homePageButton = document.getElementById('home-page');
@@ -20,5 +20,4 @@ form.addEventListener('submit', async (e) => {
         author: data.get('author'),
     };
     const response = await createPost(newPost);
-    console.log(response);
 });
